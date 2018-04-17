@@ -52,8 +52,12 @@ console.log(sumarDosNumerosVersionDos(7,7))
 
 
 
+var arregloDeNumeros=[1,false,fecha,undefined,null,"uno", sumarDosNumerosVersionDos];
+console.log(arregloDeNumeros)
 
 
 
-
-
+for(var aux=0;aux<10;aux++)
+{
+    console.log('Aux:', aux);
+}
