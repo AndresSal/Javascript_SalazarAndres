@@ -26,4 +26,10 @@ var Usuario = /** @class */ (function () {
     return Usuario;
 }());
 var usuario = new Usuario('Andres', 22, '1715670830');
-console.log(usuario);
+var usuarioOtro = {
+    mNombre: 'Jorge',
+    mEdad: 32,
+    mCedula: '1212121212'
+};
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);

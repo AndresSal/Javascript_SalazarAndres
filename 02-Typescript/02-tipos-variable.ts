@@ -42,6 +42,12 @@ class Usuario {
 }
 
 let usuario: Usuario = new Usuario('Andres', 22, '1715670830');
+let usuarioOtro={
+    mNombre: 'Jorge',
+    mEdad: 32,
+    mCedula:'1212121212'
+}
 
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
 
-console.log(usuario);
