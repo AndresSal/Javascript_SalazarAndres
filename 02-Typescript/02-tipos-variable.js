@@ -33,3 +33,12 @@ var usuarioOtro = {
 };
 console.log(usuario.imprimirEnConsola());
 console.log(usuarioOtro);
+///
+var UsuarioTres = /** @class */ (function () {
+    function UsuarioTres(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return UsuarioTres;
+}());
