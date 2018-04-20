@@ -51,3 +51,11 @@ let usuarioOtro={
 console.log(usuario.imprimirEnConsola());
 console.log(usuarioOtro);
 
+interface UsuarioDos{
+    mNombre: String;
+    mEdad: Number;
+    mCedula: String;
+    imprimirEnConsola(nombre:String):void;
+    usuario:Usuario;
+}
+
