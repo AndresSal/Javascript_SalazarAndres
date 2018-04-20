@@ -2,9 +2,9 @@
 var segundoNombre = 'Fernando';
 var cedula = '1751670830';
 segundoNombre = 'Andres';
-cedula = '1233343445'; //Da error read-only
+//cedula = '1233343445';//Da error read-only
 var URL_POLI = 'http//:www.epn.edu.ec';
-segundoNombre = 123; //Duck Typing
+//segundoNombre = 123;//Duck Typing
 ///
 var nombre;
 var edad = 28;
@@ -26,3 +26,4 @@ var Usuario = /** @class */ (function () {
     return Usuario;
 }());
 var usuario = new Usuario('Andres', 22, '1715670830');
+console.log(usuario);

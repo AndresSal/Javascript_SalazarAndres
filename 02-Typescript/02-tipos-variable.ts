@@ -3,11 +3,11 @@ let segundoNombre: string = 'Fernando';
 const cedula = '1751670830';
 
 segundoNombre = 'Andres';
-cedula = '1233343445';//Da error read-only
+//cedula = '1233343445';//Da error read-only
 
 
 const URL_POLI = 'http//:www.epn.edu.ec';
-segundoNombre = 123;//Duck Typing
+//segundoNombre = 123;//Duck Typing
 
 ///
 let nombre: String;
@@ -22,15 +22,17 @@ class Usuario {
     public mNombre: String;
     private mEdad: Number;
     protected mCedula: String;
-    constructor(nombre:String,
+
+    constructor(nombre: String,
                 edad: Number,
                 cedula: String) {
-        this.mNombre=nombre;
-        this.mEdad=edad;
-        this.mCedula=cedula;
+        this.mNombre = nombre;
+        this.mEdad = edad;
+        this.mCedula = cedula;
 
     }
-    public imprimirEnConsola(){
+
+    public imprimirEnConsola() {
         //Template Strings Tilde invertida
         console.log(`El usuario se llama:  ${this.mNombre} 
         la cedula del usuario es:  ${this.mCedula}
@@ -39,6 +41,7 @@ class Usuario {
 
 }
 
-let usuario: Usuario = new Usuario('Andres',22,'1715670830');
+let usuario: Usuario = new Usuario('Andres', 22, '1715670830');
 
 
+console.log(usuario);
