@@ -1,8 +1,17 @@
 function aumentarPoblacionOsos(mesEspecifico) {
-    var poblacion = 1;
+    var poblacion = 1, poblacionMaxima = 10000;
     for (var mes = 1; mes <= mesEspecifico; mes++) {
         poblacion = poblacion * 4;
-        console.log('Para el mes ', mes, ' se prevee que existan ', poblacion, ' osos');
+        if (poblacion <= poblacionMaxima) {
+            console.log('Para el mes ', mes, ' se prevee que existan ', poblacion, ' osos');
+        }
+        else {
+            console.log('Para el mes ', mes, ' la poblacion se excedera con ', poblacion - poblacionMaxima, ' osos');
+            console.log('Removiendo ', poblacion / 2, ' osos de la poblacion');
+            var nuevaPoblacion = poblacion / 2;
+            poblacion = nuevaPoblacion;
+            console.log('Después del mes ', mes, 'la nueva poblacion de osos sera de ', poblacion);
+        }
     }
 }
 aumentarPoblacionOsos(10);
