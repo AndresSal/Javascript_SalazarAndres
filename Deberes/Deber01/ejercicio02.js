@@ -1,9 +1,5 @@
 function medidaTotalDeMegaWatts() {
-    var cantidadTotalMW = 0;
-    var cantidadMWGeneradorPrincipal = 62;
-    var cantidadMWGeneradorSecundario = 124;
-    var contadorPrincipal = 1;
-    var contadorSecundario;
+    var cantidadTotalMW = 0, cantidadMWGeneradorPrincipal = 62, cantidadMWGeneradorSecundario = 124, contadorPrincipal = 1, contadorSecundario;
     while (contadorPrincipal <= 4) {
         cantidadTotalMW = cantidadTotalMW + cantidadMWGeneradorPrincipal;
         console.log('Generador Principal', contadorPrincipal, ' está prendido, añadiendo ', cantidadMWGeneradorPrincipal, 'MW para un total de ', cantidadTotalMW, ' MW');
