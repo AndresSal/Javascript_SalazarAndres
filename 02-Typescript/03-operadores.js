@@ -1,5 +1,6 @@
 //inicio
 var arregloNumeros = [1, 2, 3, 4, 5];
+var arregloDeudas = [73, 123.32, 23, 43, 123, 43, 50, 1];
 var sumarDosNumeros = function (numeroUno, numeroDos) {
     return numeroUno + numeroDos;
 };
@@ -59,8 +60,15 @@ var arregloUsuarios = [
         edad: 25
     }
 ];
+function calcularDeudaDelUsuario(edad) {
+    arregloDeudas.reduce(function (totalAcumulado, deuda) {
+        return totalAcumulado + ((edad) / 100 * deuda);
+    }, 0);
+}
+//mutar el arreglo
 var usuariosConCincoAniosMenos = arregloUsuarios.map(function (usuario) {
     usuario.edad = usuario.edad - 5;
+    usuario.deuda = calcularDeudaDelUsuario(usuario.edad);
     return usuario;
 });
 console.log('Usuario con cinco anios menos', usuariosConCincoAniosMenos);
@@ -69,3 +77,4 @@ function (totalAcumulado, valorArreglo) {
     return totalAcumulado + valorArreglo.edad;
 }, 20);
 console.log("resultado de las edades", resultadoDeLasEdades);
+///
