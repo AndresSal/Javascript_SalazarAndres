@@ -15,7 +15,11 @@ let totalEdades = arregloDeNumeros =>{
 //sin parentesis
 let facultades = a => ['Facultad1', 'Facultad2'];//sin tener que poner la palabra return
 //asignando un tipo de dato
-let facultadesDos = (a:number) => ['Facultad1', 'Facultad2'];//sin tener que poner la palabra return
+let facultadesDos = (a?:number) => ['Facultad1', 'Facultad2'];//sin tener que poner la palabra return
+
+//Usar ? dentro de una funcion y junto a un parametro significa que ese parametro es opcional.
+
+facultadesDos()
 
 arregloNumeros.forEach(
     (valor, indice, arreglo) => {
