@@ -59,6 +59,11 @@ var arregloUsuarios = [
         edad: 25
     }
 ];
+var usuariosConCincoAniosMenos = arregloUsuarios.map(function (usuario) {
+    usuario.edad = usuario.edad - 5;
+    return usuario;
+});
+console.log('Usuario con cinco anios menos', usuariosConCincoAniosMenos);
 var resultadoDeLasEdades = arregloUsuarios.reduce(//primer parametro una funcion el segundo un valor
 function (totalAcumulado, valorArreglo) {
     return totalAcumulado + valorArreglo.edad;

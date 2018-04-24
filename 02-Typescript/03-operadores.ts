@@ -78,12 +78,21 @@ let arregloUsuarios: UsuarioArreglo[] = [ //segunda forma
     }
 ]
 
+
+let usuariosConCincoAniosMenos = arregloUsuarios.map((usuario:UsuarioArreglo)=>{
+    usuario.edad = usuario.edad -5;
+    return usuario;
+})
+
+console.log('Usuario con cinco anios menos',usuariosConCincoAniosMenos);
+
 let resultadoDeLasEdades = arregloUsuarios.reduce( //primer parametro una funcion el segundo un valor
     (totalAcumulado, valorArreglo:UsuarioArreglo) => {
         return totalAcumulado + valorArreglo.edad;
     },
     20
 );
+
 
 
 
