@@ -12,8 +12,17 @@ let totalEdades = arregloDeNumeros =>{
 };
 
 //para retornar un cierto valor
+//sin parentesis
 let facultades = a => ['Facultad1', 'Facultad2'];//sin tener que poner la palabra return
+//asignando un tipo de dato
+let facultadesDos = (a:number) => ['Facultad1', 'Facultad2'];//sin tener que poner la palabra return
 
 arregloNumeros.forEach(
+    (valor, indice, arreglo) => {
+        console.log('valor',valor);
+        console.log('indice',indice);
+        console.log('arreglo',arreglo);
+    }//puedo iterar cada elemento del arreglo
+
 
 )
