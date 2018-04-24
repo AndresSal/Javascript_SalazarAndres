@@ -21,12 +21,23 @@ let facultadesDos = (a?:number) => ['Facultad1', 'Facultad2'];//sin tener que po
 
 facultadesDos()
 
+let sumar = 0;
 arregloNumeros.forEach(
     (valor, indice, arreglo) => {
         console.log('valor',valor);
         console.log('indice',indice);
         console.log('arreglo',arreglo);
+        sumar = sumar + valor;
+        console.log(sumar);
     }//puedo iterar cada elemento del arreglo
-
-
 )
+
+//operador de la suma
+let resultadoDeLaSuma = arregloNumeros.reduce( //primer parametro una funcion el segundo un valor
+    (totalAcumulado, valorArreglo) => {
+        return totalAcumulado + valorArreglo;
+    },
+    20
+);
+
+console.log('resultadoDeLaSuma ', resultadoDeLaSuma);

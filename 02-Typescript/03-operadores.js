@@ -24,3 +24,8 @@ arregloNumeros.forEach(function (valor, indice, arreglo) {
 } //puedo iterar cada elemento del arreglo
 );
 //operador de la suma
+var resultadoDeLaSuma = arregloNumeros.reduce(//primer parametro una funcion el segundo un valor
+function (totalAcumulado, valorArreglo) {
+    return totalAcumulado + valorArreglo;
+}, 20);
+console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
