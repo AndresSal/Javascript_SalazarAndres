@@ -36,7 +36,7 @@ function (totalAcumulado, valorArreglo) {
 console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
 console.log('resultadoDeLResta ', resultadoDeLaResta);
 ///
-//let arregloUsuarios: Array<UsuarioArreglo>= []
+//let arregloUsuarios: Array<UsuarioArreglo>= [] primera forma
 var arregloUsuarios = [
     {
         nombre: 'Andres',

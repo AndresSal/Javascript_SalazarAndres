@@ -53,9 +53,9 @@ console.log('resultadoDeLResta ', resultadoDeLaResta);
 
 ///
 
-//let arregloUsuarios: Array<UsuarioArreglo>= []
+//let arregloUsuarios: Array<UsuarioArreglo>= [] primera forma
 
-let arregloUsuarios: UsuarioArreglo[] = [
+let arregloUsuarios: UsuarioArreglo[] = [ //segunda forma
     {
         nombre: 'Andres',
         edad: 28
