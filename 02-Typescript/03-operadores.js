@@ -61,7 +61,7 @@ var arregloUsuarios = [
     }
 ];
 function calcularDeudaDelUsuario(edad) {
-    arregloDeudas.reduce(function (totalAcumulado, deuda) {
+    return arregloDeudas.reduce(function (totalAcumulado, deuda) {
         return totalAcumulado + ((edad) / 100 * deuda);
     }, 0);
 }
@@ -70,6 +70,8 @@ var usuariosConCincoAniosMenos = arregloUsuarios.map(function (usuario) {
     usuario.edad = usuario.edad - 5;
     usuario.deuda = calcularDeudaDelUsuario(usuario.edad);
     return usuario;
+}).filter(function (usuario) {
+    return (usuario.deuda < 100);
 });
 console.log('Usuario con cinco anios menos', usuariosConCincoAniosMenos);
 var resultadoDeLasEdades = arregloUsuarios.reduce(//primer parametro una funcion el segundo un valor

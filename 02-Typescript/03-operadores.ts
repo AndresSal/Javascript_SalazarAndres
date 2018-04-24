@@ -1,5 +1,6 @@
 //inicio
 let arregloNumeros = [1, 2, 3, 4, 5];
+let arregloDeudas = [73,123.32,23,43,123,43,50,1];
 
 
 let sumarDosNumeros = (numeroUno: number, numeroDos: number)=>{//fat arrow function
@@ -78,11 +79,21 @@ let arregloUsuarios: UsuarioArreglo[] = [ //segunda forma
     }
 ]
 
+function calcularDeudaDelUsuario(edad){
+    return arregloDeudas.reduce((totalAcumulado,deuda:number) =>{
+        return totalAcumulado + ((edad)/100*deuda)
+    },0);
+}
 
+//mutar el arreglo
 let usuariosConCincoAniosMenos = arregloUsuarios.map((usuario:UsuarioArreglo)=>{
     usuario.edad = usuario.edad -5;
+    usuario.deuda = calcularDeudaDelUsuario(usuario.edad);
     return usuario;
-})
+}).filter((usuario:UsuarioArreglo)=>{
+    return(usuario.deuda<100);
+});
+
 
 console.log('Usuario con cinco anios menos',usuariosConCincoAniosMenos);
 
@@ -94,11 +105,18 @@ let resultadoDeLasEdades = arregloUsuarios.reduce( //primer parametro una funcio
 );
 
 
+//
 
 
 interface UsuarioArreglo{
     nombre: string,
-    edad: number
+    edad: number,
+    deuda?: number
 }
 
 console.log("resultado de las edades",resultadoDeLasEdades)
+
+
+///
+
+
