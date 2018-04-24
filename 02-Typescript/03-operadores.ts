@@ -40,4 +40,13 @@ let resultadoDeLaSuma = arregloNumeros.reduce( //primer parametro una funcion el
     20
 );
 
+//operador de la suma
+let resultadoDeLaResta = arregloNumeros.reduce( //primer parametro una funcion el segundo un valor
+    (totalAcumulado, valorArreglo) => {
+        return totalAcumulado - valorArreglo;
+    },
+    20
+);
+
 console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
+console.log('resultadoDeLResta ', resultadoDeLaResta);

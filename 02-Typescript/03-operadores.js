@@ -28,4 +28,10 @@ var resultadoDeLaSuma = arregloNumeros.reduce(//primer parametro una funcion el 
 function (totalAcumulado, valorArreglo) {
     return totalAcumulado + valorArreglo;
 }, 20);
+//operador de la suma
+var resultadoDeLaResta = arregloNumeros.reduce(//primer parametro una funcion el segundo un valor
+function (totalAcumulado, valorArreglo) {
+    return totalAcumulado - valorArreglo;
+}, 20);
 console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
+console.log('resultadoDeLResta ', resultadoDeLaResta);
