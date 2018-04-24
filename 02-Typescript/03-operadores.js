@@ -14,9 +14,13 @@ var facultades = function (a) { return ['Facultad1', 'Facultad2']; }; //sin tene
 var facultadesDos = function (a) { return ['Facultad1', 'Facultad2']; }; //sin tener que poner la palabra return
 //Usar ? dentro de una funcion y junto a un parametro significa que ese parametro es opcional.
 facultadesDos();
+var sumar = 0;
 arregloNumeros.forEach(function (valor, indice, arreglo) {
     console.log('valor', valor);
     console.log('indice', indice);
     console.log('arreglo', arreglo);
+    sumar = sumar + valor;
+    console.log(sumar);
 } //puedo iterar cada elemento del arreglo
 );
+//operador de la suma
