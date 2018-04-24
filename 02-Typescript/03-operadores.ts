@@ -50,3 +50,46 @@ let resultadoDeLaResta = arregloNumeros.reduce( //primer parametro una funcion e
 
 console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
 console.log('resultadoDeLResta ', resultadoDeLaResta);
+
+///
+
+//let arregloUsuarios: Array<UsuarioArreglo>= []
+
+let arregloUsuarios: UsuarioArreglo[] = [
+    {
+        nombre: 'Andres',
+        edad: 28
+    },
+    {
+        nombre: 'Andres',
+        edad: 10
+    },
+    {
+        nombre: 'Andres',
+        edad: 70
+    },
+    {
+        nombre: 'Andres',
+        edad: 32
+    },
+    {
+        nombre: 'Andres',
+        edad: 25
+    }
+]
+
+let resultadoDeLasEdades = arregloUsuarios.reduce( //primer parametro una funcion el segundo un valor
+    (totalAcumulado, valorArreglo:UsuarioArreglo) => {
+        return totalAcumulado + valorArreglo.edad;
+    },
+    20
+);
+
+
+
+interface UsuarioArreglo{
+    nombre: string,
+    edad: number
+}
+
+console.log("resultado de las edades",resultadoDeLasEdades)

@@ -35,3 +35,32 @@ function (totalAcumulado, valorArreglo) {
 }, 20);
 console.log('resultadoDeLaSuma ', resultadoDeLaSuma);
 console.log('resultadoDeLResta ', resultadoDeLaResta);
+///
+//let arregloUsuarios: Array<UsuarioArreglo>= []
+var arregloUsuarios = [
+    {
+        nombre: 'Andres',
+        edad: 28
+    },
+    {
+        nombre: 'Andres',
+        edad: 10
+    },
+    {
+        nombre: 'Andres',
+        edad: 70
+    },
+    {
+        nombre: 'Andres',
+        edad: 32
+    },
+    {
+        nombre: 'Andres',
+        edad: 25
+    }
+];
+var resultadoDeLasEdades = arregloUsuarios.reduce(//primer parametro una funcion el segundo un valor
+function (totalAcumulado, valorArreglo) {
+    return totalAcumulado + valorArreglo.edad;
+}, 20);
+console.log("resultado de las edades", resultadoDeLasEdades);
