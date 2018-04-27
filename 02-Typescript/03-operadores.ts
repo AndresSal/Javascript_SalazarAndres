@@ -93,9 +93,9 @@ let usuariosConCincoAniosMenos = arregloUsuarios.map((usuario:UsuarioArreglo)=>{
 }).filter((usuario:UsuarioArreglo)=>{
     return(usuario.deuda<100);
 })
-    .every(//AND
+    .some(//OR
         (usuario: UsuarioArreglo) => {
-            return (usuario.edad>18);
+            return (usuario.edad>=5);
         }//por cada item del arreglo se verifica esto, se tiene que cumplir que todos deben cumplir la condición
     );
 
