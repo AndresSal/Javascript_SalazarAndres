@@ -92,7 +92,12 @@ let usuariosConCincoAniosMenos = arregloUsuarios.map((usuario:UsuarioArreglo)=>{
     return usuario;
 }).filter((usuario:UsuarioArreglo)=>{
     return(usuario.deuda<100);
-});
+})
+    .every(//AND
+        (usuario: UsuarioArreglo) => {
+            return (usuario.edad>18);
+        }//por cada item del arreglo se verifica esto, se tiene que cumplir que todos deben cumplir la condición
+    );
 
 
 console.log('Usuario con cinco anios menos',usuariosConCincoAniosMenos);
@@ -118,5 +123,7 @@ console.log("resultado de las edades",resultadoDeLasEdades)
 
 
 ///
+
+
 
 

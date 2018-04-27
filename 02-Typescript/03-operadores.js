@@ -72,7 +72,12 @@ var usuariosConCincoAniosMenos = arregloUsuarios.map(function (usuario) {
     return usuario;
 }).filter(function (usuario) {
     return (usuario.deuda < 100);
-});
+})
+    .every(//AND
+function (usuario) {
+    return (usuario.edad > 18);
+} //por cada item del arreglo se verifica esto, se tiene que cumplir que todos deben cumplir la condición
+);
 console.log('Usuario con cinco anios menos', usuariosConCincoAniosMenos);
 var resultadoDeLasEdades = arregloUsuarios.reduce(//primer parametro una funcion el segundo un valor
 function (totalAcumulado, valorArreglo) {
