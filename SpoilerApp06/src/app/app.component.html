@@ -1,0 +1,244 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Simple">
+    <ng-template ngbPanelContent>
+      <button
+        pButton
+        type="button"
+        label="Click"
+        class="ui-button-success"></button>
+      <p-button label="Click" ></p-button>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>&#9733; <b>Fancy</b> title &#9733;</span>
+      </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Disabled" [disabled]="true">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<button mat-button color="accent">Click me!</button>
+
+<div class="content-section implementation">
+  <p-galleria [images]="arregloPeliculasMCU" panelWidth="500" panelHeight="313"></p-galleria>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="sa-titulo">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-6"></div>-->
+    <!--<div class="col-md-6">-->
+      <!--<div class="row">-->
+        <!--<div class="col-sm-2"-->
+             <!--*ngFor="let item of arregloItemsMenuPrincipal">-->
+
+          <!--<app-item-menu-inicial-->
+            <!--[nombreItem]="item.nombre"-->
+            <!--[descripcionItem]="item.descripcion"-->
+            <!--[esSeleccionado]="item.esSeleccionado">-->
+
+          <!--</app-item-menu-inicial>-->
+
+        <!--</div>-->
+
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+
+  <!--<div class="row">-->
+    <!--<div class="col-sm-6 text-center"-->
+         <!--*ngFor="let pelicula of arregloPeliculas">-->
+
+      <!--<app-pelicula-banner-->
+        <!--[descripcionPelicula]="pelicula.descripcion"-->
+        <!--[nombrePelicula]="pelicula.nombre"-->
+        <!--[esEstreno]="pelicula.esEstreno"-->
+        <!--[urlImagen]="pelicula.urlImagen"-->
+        <!--(dioClickEnEstado)="alertar($event)">-->
+
+        <!--&lt;!&ndash;<button (click)="pelicula.nombre = 'Andres'">Cambiar es estreno</button>&ndash;&gt;-->
+
+      <!--</app-pelicula-banner>-->
+
+      <!--&lt;!&ndash;<button (click)="pelicula.esEstreno = !pelicula.esEstreno">Cambiar es estreno</button>&ndash;&gt;-->
+
+    <!--</div>-->
+
+    <!--&lt;!&ndash;AQUI UN COMENTARIO&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;recorrer un arreglo&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-6 text-center"&ndash;&gt;-->
+    <!--&lt;!&ndash;*ngFor="let numero of arregloNumeros; let indice = index">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;{{indice}}: Numero {{numero}}&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;mostrar una salida dependiendo de un valor X&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<h1 *ngIf="mostrarHola"> Hola </h1>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+    <!--&lt;!&ndash;<h1 *ngIf="!mostrarHola"> Mundo </h1>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="col-md-3"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-3"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-3"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-3"></div>&ndash;&gt;-->
+
+  <!--</div>-->
+
+
+
+
+
+
+
+  <!--<div class="row">-->
+    <!--<div class="col-md-3 text-center"-->
+         <!--*ngFor="let misPelis of arregloPeliculasEstreno">-->
+      <!--<app-pelicula-banner-->
+        <!--[nombrePelicula]="misPelis.nombre"-->
+        <!--[esEstreno]="misPelis.esEstreno"-->
+        <!--[urlImagen]="misPelis.urlImagen">-->
+
+      <!--</app-pelicula-banner>-->
+
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<h1>ÚLTIMAS PELÍCULAS AGREGADAS</h1>-->
+<!--<div class="row">-->
+  <!--<div class="col-sm-3"-->
+       <!--*ngFor="let peliculaRegular of arregloPeliculasRegulares">-->
+    <!--<app-pelicula-regular-->
+      <!--[urlImagenPelicula]="peliculaRegular.urlImagenPelicula">-->
+
+    <!--</app-pelicula-regular>-->
+  <!--</div>-->
+
+
+
+
+
+<!--<app-pelicula-regular></app-pelicula-regular>-->
+
+<!--<app-grilla></app-grilla>-->
+<!--<app-item-menu-inicial></app-item-menu-inicial>-->
+
+<!--<app-pelicula-banner></app-pelicula-banner>-->
+<!--<app-boton></app-boton>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--OTRO EJERCICIO-->
+
+<!--<h2 [class]="clase">Two way data binding</h2>-->
+<!--<ul>-->
+  <!--<li> clase <-> template [(ngModel)]</li>-->
+<!--</ul>-->
+<!--<p>Clase: {{clase}}</p>-->
+<!--<input type="text"-->
+       <!--id="clase"-->
+       <!--name="clase"-->
+       <!--[(ngModel)]="clase">-->
+
+<!--<h2>One way data binding</h2>-->
+
+<!--<ul>-->
+  <!--<li>Clase al template   -> [class]</li>-->
+  <!--<li>Template a la clase -> (click)</li>-->
+<!--</ul>-->
+
+
+
+<!--<div [hidden]="false">-->
+  <!--<h1 [id]="nombreClase"-->
+      <!--[class]="nombreClase">-->
+    <!--Hola amigos de youtube</h1>-->
+
+  <!--<input type="text" #textoInput>-->
+  <!--<div>-->
+    <!--<p>Nombre: {{nombre}}</p>-->
+    <!--<p>Apellido: {{apellido}}</p>-->
+    <!--<p>Edad: {{edad}}</p>-->
+    <!--<p>Sueldo: {{sueldo | currency}}</p>-->
+    <!--<p>Fecha de Nacimiento: {{fechaNacimiento | date:'yyyy/MM/dd'}}</p>-->
+
+    <!--<button (blur)="cambiarClaseDeTitulo()"-->
+            <!--(click)="cambiarClaseDeTitulo()">-->
+      <!--{{nombreBoton}}-->
+    <!--</button>-->
+  <!--</div>-->
+
+    <!--<button (click)="aplicarClase(textoInput.value)">-->
+      <!--Aplicar clase-->
+    <!--</button>-->
+<!--</div>-->

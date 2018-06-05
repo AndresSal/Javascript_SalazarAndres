@@ -64,6 +64,6 @@ class UsuarioTres{
     constructor(public mNombre: String,
                 private mEdad: Number,
                 protected mCedula: String){
-        
+
     }
 }

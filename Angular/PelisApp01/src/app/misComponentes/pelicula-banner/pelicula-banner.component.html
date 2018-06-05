@@ -1,0 +1,11 @@
+<div class="sa-fondo-pelicula-banner
+            sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen+')'">
+
+  <!--Uso de variables en etiquetas html-->
+  <!--img [src]="urlImagen" [alt]="descripcionImagen"-->
+  <div class="sa-espaciado"></div>
+  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
+  <h1>{{nombrePelicula}}</h1>
+  <p>{{descripcionPelicula}}</p>
+</div>
+

@@ -1,0 +1,21 @@
+.sa-fondo-color-item {
+  background-color: #1b1b1b;
+  border-style: solid;
+  border-left-color: #333333;
+  border-right-color: #333333;
+  border-width: 2px;
+  width: 140px;
+  height: 30px;
+  -ms-text-size-adjust: auto;
+  /*max-width: 100px;*/
+  /*text-align: center;*/
+}
+
+.sa-color-item-normal {
+  color: #555555;
+}
+
+.sa-color-item-sombreado {
+  color: #ffffff;
+}
+
