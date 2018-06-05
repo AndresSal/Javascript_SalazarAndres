@@ -15,6 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {CarouselModule} from 'primeng/carousel';
 import {GalleriaModule} from 'primeng/primeng';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 
 
@@ -26,6 +27,7 @@ import {GalleriaModule} from 'primeng/primeng';
     GrillaComponent,
     ItemMenuInicialComponent,
     PeliculaRegularComponent,
+    GaleriaComponent,
   ],
   imports: [
     BrowserModule,
